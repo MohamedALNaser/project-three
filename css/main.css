@@ -1,33 +1,148 @@
-header {
-    /* background: #000; */
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.landing-page {
+    min-height: 200vh;
+    position: relative;
 }
 
-header h1 {
-    font-size: 2em;
+.landing-page header {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    margin-bottom: 20vh;
+}
+
+.landing-page header .overlay {
+    position: relative;
+    order: 2;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: -1;
+}
+
+.landing-page header .overlay .container {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.landing-page header .overlay .search {
+    display: flex;
+    align-content: center;
+}
+
+.landing-page header .overlay .search .search-btn {
+    transform: translate(-22px);
+}
+
+.landing-page header .header-area {
+    background-image: url("./../media/1920x1080/01.jpg");
+    background-size: cover;
+    min-height: 100%;
+    width: 75%;
+    position: relative;
+}
+
+.landing-page header .header-area .container {
+    flex-direction: column;
+    left: 90px;
+}
+
+.landing-page header .header-area .header-top {
+    position: relative;
+    top: 0;
+    width: 100%;
+    /* padding: 30px; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.landing-page header .header-area .header-top nav {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.landing-page header .header-area .header-top a {
+    color: white;
+}
+
+.landing-page header .header-area .header-top .logo a {
+    font-size: 30px;
+}
+
+.landing-page header .header-area .header-bottom {
+    width: 70%;
+}
+
+.landing-page header .header-area .header-bottom h1 {
+    font-size: 55px;
     margin: 0;
     width: fit-content;
-    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
-header h1 a #logo-img {
-    width: 100px;
-    height: 100px;
+.landing-page header .header-area .header-bottom p {
+    width: 86%;
+    line-height: 1.5;
+    margin: 10px 0 35px;
+    color: white;
 }
 
-header nav {
-    /* background: #000; */
-    /* color: #fff; */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+.landing-page header .header-area .header-bottom .header-btn .btn {
+    border: 2px solid white;
+    background-color: white;
+    color: #00173e;
+}
+
+.landing-page header .header-area .header-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(48%, 20%);
+    -webkit-transform: translate(48%, 20%);
+    -moz-transform: translate(48%, 20%);
+    -ms-transform: translate(48%, 20%);
+    -o-transform: translate(48%, 20%);
+}
+
+.landing-page header .header-area .header-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.landing-page header .social-icons {
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+}
+
+.landing-page header .social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.landing-page header .social-icons li img {
+    width: 40px;
+    height: 40px;
+}
+
+.landing-page .video {
+    position: absolute;
+    bottom: -74px;
+    right: 23%;
+    width: 151px;
+    height: 151px;
+    z-index: -1;
+}
+
+.landing-page header .video video {
+    width: 100%;
+    height: 100%;
 }

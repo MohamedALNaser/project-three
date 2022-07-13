@@ -6,6 +6,10 @@
     -webkit-box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -14,10 +18,28 @@ ul {
 }
 
 ul li {
-    margin: 0 5px;
+    margin: 0 20px;
 }
 
 a {
     color: #000;
     text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 92%;
+    min-height: 100vh;
+    padding-top: 40px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.btn {
+    border: 2px solid #00173e;
+    background-color: #00173e;
+    color: white;
+    padding: 8px 20px;
+    font-size: 20px;
 }
