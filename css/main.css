@@ -252,3 +252,76 @@
 .landing-page section .container .row .col-1 .col-1-text p span {
     padding-bottom: 5px;
 }
+
+.landing-page section .container .row.three {
+    gap: 15px;
+}
+
+.landing-page section .container .row.three>div>div:last-child {
+    padding: 2px;
+}
+
+.landing-page section .container .row.three>div>div:last-child h2 {
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+.landing-page section .container .row.three>div>div:last-child p {
+    padding-bottom: 30px;
+}
+
+.landing-page section .container .row.three>div>div:last-child :last-child {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0;
+}
+
+.landing-page footer {
+    width: 100%;
+    background-color: #00173e;
+    text-transform: capitalize;
+    padding: 30px 0;
+    color: white;
+}
+
+.landing-page footer .container {
+    flex-direction: column;
+    min-height: fit-content;
+    align-items: center;
+}
+
+.landing-page footer .container>div {
+    width: 90%;
+}
+
+.landing-page footer .container .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.landing-page footer .container .top>div h3 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.landing-page footer .container .top>div ul {
+    flex-direction: column;
+}
+
+.landing-page footer .container .top>div ul li {
+    padding: 10px 0;
+}
+
+.landing-page footer .container .bottom {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 10px;
+}
+
+.landing-page footer .container .bottom ul {
+    width: 55%;
+    margin-left: 80px;
+}
